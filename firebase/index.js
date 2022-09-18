@@ -5,6 +5,9 @@ import { firebaseConfig } from "../firebaseConfig"
 
 const app = initializeApp(firebaseConfig)
 
+console.log(firebaseConfig)
+console.log(app)
+
 const auth = getAuth(app)
 const db = getFirestore(app)
 export { auth, db }

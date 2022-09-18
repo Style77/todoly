@@ -49,7 +49,7 @@ const EditModal = ({ todo, visible, closeHandler }) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button
-                    onPress={() => () => deleteTodo(todo.id)}
+                    onPress={() => {deleteTodo(todo.id); closeHandler()}}
                     color="error"
                     auto
                 >

@@ -1,5 +1,7 @@
 import { styled } from "@nextui-org/react"
 
-export const Box = styled("div", {
+const Box = styled("div", {
     boxSizing: "border-box",
 });
+
+export default Box

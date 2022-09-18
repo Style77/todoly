@@ -74,8 +74,8 @@ const TodoList = () => {
                         </Table.Header>
                         <Table.Body>
                             {todos &&
-                                todos.map((todo) => (
-                                    <Table.Row>
+                                todos.map((todo, index) => (
+                                    <Table.Row key={index}>
                                         <Table.Cell>
                                             <Text>{todo.title}</Text>
                                         </Table.Cell>
