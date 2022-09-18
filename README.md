@@ -15,7 +15,7 @@ cd todoly
 yarn install
 ```
 2. Create a Firebase project and add a web app
-3. Copy the Firebase config object and paste it into `firebaseConfig.js`
+3. Copy the Firebase config object and paste it (formatted) into `.env.local`
 4. Run the app
 ```bash
 yarn dev
