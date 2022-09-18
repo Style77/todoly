@@ -24,11 +24,6 @@ const TodoList = () => {
     const [todos, setTodos] = React.useState([])
     const { user } = useAuth()
 
-    const [ editModalVisible, setEditModalVisible ] = React.useState(false)
-
-    const closeHandler = () => setEditModalVisible(false)
-
-
     const refreshData = () => {
         if (!user) {
             setTodos([])
@@ -111,15 +106,7 @@ const TodoList = () => {
                                                 iconOff={<FaToggleOff />}
                                                 auto
                                             />
-                                            <Button
-                                                onPress={() => setEditModalVisible(true)}
-                                                color="error"
-                                                size="xs"
-                                                auto
-                                            >
-                                                <FaEdit />
-                                            </Button>
-                                            <EditModal todo={todo} visible={editModalVisible} closeHandler={closeHandler} />
+                                            <EditModal todo={todo} />
                                         </Table.Cell>
                                     </Table.Row>
                                 ))}
