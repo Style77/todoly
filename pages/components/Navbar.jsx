@@ -29,8 +29,6 @@ const CustomNavbar = () => {
                 const email = error.customData.email
                 // The AuthCredential type that was used.
                 const credential = GoogleAuthProvider.credentialFromError(error)
-
-                console.error(error)
             })
     }
 

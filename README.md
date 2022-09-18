@@ -1,7 +1,7 @@
 # Todoly
 Todoly is a simple todo list app built with Next.js and Firebase.
 
-Live example is hosted on Vercel: https://todoly.vercel.app/
+Live example is hosted on Vercel: https://todoly-ten.vercel.app/
 
 ## Features
 - Create, edit, and delete todos

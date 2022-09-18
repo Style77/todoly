@@ -9,19 +9,21 @@ const EditModal = ({ todo }) => {
     const [visible, setVisible] = useState()
 
     const showModal = () => {
-        console.log(visible)
         setVisible(true)
-        console.log(visible)
     }
-
-    useEffect(() => {
-        console.log(visible);
-    }, [visible]);
-
+    
     return (
         <>
             {visible ?
                 <>
+                    <Button
+                        onPress={() => showModal()}
+                        color="error"
+                        size="xs"
+                        auto
+                    >
+                        <FaEdit />
+                    </Button>
                     <Modal
                         closeButton
                         aria-labelledby="modal-title"
